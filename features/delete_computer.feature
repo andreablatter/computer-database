@@ -1,4 +1,6 @@
 Feature: Computer Deletion - basic functionality
+ As a user
+ I want to delete a computer
 
  Background:
    Given I am on the Computer database screen

@@ -8,7 +8,7 @@ Feature: Computer Creation - basic functionality
  @COMPUTER_MANAGER @HIGH @CREATE @REGRESSION
  Scenario Outline: [COMPUTER_MANAGER] Create a new computer with different values
   When I press button Add a New Computer
-  When I "create" computer name <Name>, introduced date <Introduced>, discontinued date <Discontinued> and select the company <Company>
+  And I "create" computer name <Name>, introduced date <Introduced>, discontinued date <Discontinued> and select the company <Company>
   And I press button "Create this computer"
   Then I should see an action confirmation message <Name>
 
@@ -35,7 +35,7 @@ Feature: Computer Creation - basic functionality
   Then I should not see a computer created
 
    @COMPUTER_MANAGER @HIGH @CREATE @REGRESSION
- Scenario Outline: [COMPUTER_MANAGER] Validate Introduce and Discontinued dates
+ Scenario Outline: [COMPUTER_MANAGER] Validate Introduce and Discontinued fields
   And I press button Add a New Computer
   When I "crete" computer name <Name>, introduced date <Introduced>, discontinued date <Discontinued> and select the company <Company>
   And I press button "Create this computer"

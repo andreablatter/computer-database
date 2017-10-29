@@ -1,4 +1,6 @@
 Feature: Computer Navigation - basic functionality
+  As a user
+  I want to navigate in computer list
 
  Background:
    Given I am on the Computer database screen

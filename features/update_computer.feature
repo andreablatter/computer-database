@@ -27,7 +27,7 @@ Feature: Computer Updated - basic functionality
     Then I should see a message for a field "name"
 
    @COMPUTER_MANAGER @MEDIUM @UPDATE
-  Scenario Outline: [COMPUTER_MANAGER] Validate Introduce and Discontinued dates in updated
+  Scenario Outline: [COMPUTER_MANAGER] Validate Introduce and Discontinued fields in updated
      And I select "Stoneware" in a list
      When I "update" computer name <Name>, introduced date <Introduced>, discontinued date <Discontinued> and select the company <Company>
      And I press button "Save this computer"
