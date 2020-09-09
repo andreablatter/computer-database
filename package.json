@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webdriver-manager update",
-    "selenium": "webdriver-manager start",
+    "run-script": "webdriver-manager start",
     "test": "protractor --cucumberOpts.tags=@REGRESSION"
   },
   "devDependencies": {
