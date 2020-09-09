@@ -21,6 +21,8 @@ jobs:
         node-version: 12
     - run: npm ci
     - run: npm install -g protractor
+    - run: npm install install_testapp
+    - run: npm start
     - run: npm test
-    - run: npm run build
+
   
