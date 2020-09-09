@@ -2,7 +2,9 @@
   "name": "computer-database",
   "version": "1.0.0",
   "scripts": {
-    "test": "protractor"
+    "start": "webdriver-manager update",
+    "selenium": "webdriver-manager start",
+    "test": "protractor --cucumberOpts.tags=@REGRESSION"
   },
   "devDependencies": {
     "chai": "^4.1.2",
