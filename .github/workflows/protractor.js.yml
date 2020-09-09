@@ -22,7 +22,7 @@ jobs:
     - run: npm ci
     - run: npm i package --save-dev
     - run: npm start
-    - run: npm selenium
+    - run: npm run-script
     - run: npm test
 
   
