@@ -5,7 +5,7 @@ Feature: Computer Creation - basic functionality
  Background:
    Given I am on the Computer database screen
 
- @COMPUTER_MANAGER @HIGH @CREATE @REGRESSIONN
+ @COMPUTER_MANAGER @HIGH @CREATE @REGRESSION
  Scenario Outline: [COMPUTER_MANAGER] Create a new computer with different values
   When I press button Add a New Computer
   And I "create" computer name <Name>, introduced date <Introduced>, discontinued date <Discontinued> and select the company <Company>
