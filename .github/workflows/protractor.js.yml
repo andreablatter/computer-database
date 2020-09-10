@@ -21,8 +21,9 @@ jobs:
         node-version: 12
     - name: Install Google Chrome # Using shell script to install Google Chrome
       run: |
-       chmod +x ./script/InstallChrome.sh
-        ./script/InstallChrome.sh 
+        sudo apt-get update
+        sudo apt-get --only-upgrade install google-chrome-stable
+        google-chrome --version
     - run: npm ci
     - run: npm start
     - run: npm test
